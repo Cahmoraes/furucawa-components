@@ -1,0 +1,13 @@
+{
+  "name": "ezFurukawa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "sass --no-source-map --style compressed ./src/",
+    "watch": "sass --no-source-map --watch ./src/"
+  },
+  "devDependencies": {
+    "sass": "^1.49.7"
+  }
+}

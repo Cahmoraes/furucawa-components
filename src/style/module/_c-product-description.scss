@@ -1,0 +1,55 @@
+@use '../mixins';
+@use '../variables';
+
+.c-product-description {
+  display: flex;
+  flex-direction: column;
+
+  &__numberTitle {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+    color: variables.$blue-500;
+
+    @include mixins.device(md) {
+      font-size: 20px;
+    }
+  }
+
+  &__number {
+    width: 26px;
+    height: 26px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  &__info {
+    padding-left: 6.25px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: variables.$gray-700;
+
+    @include mixins.device(md) {
+      font-family: variables.$type-secondary;
+      font-size: 16px;
+    }
+
+    @include mixins.device(md) {
+      font-size: 18px;
+    }
+  }
+}
