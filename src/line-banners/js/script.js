@@ -1,33 +1,33 @@
-$('[data-carousel="line-banner"]').slick({
+$('[data-carousel="line-banners"]').slick({
+  dots: true,
   infinite: false,
   speed: 300,
-  slidesToShow: 6,
+  slidesToShow: 3,
+  arrows: false,
   slidesToScroll: 3,
-  dots: false,
-  infinite: true,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        arrows: true,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 3,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        infinite: true,
         dots: true
       }
     },
-    // {
-    //   breakpoint: 480,
-    //   settings: {
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1
-    //   }
-    // }
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
   ]
 })

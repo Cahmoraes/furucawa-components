@@ -1,76 +1,57 @@
-body {
-  font-family: "Roboto", sans-serif;
+.c-line-banners {
+  background: white;
+  background: linear-gradient(5deg, white 26%, #c21b23 26%, #ec1c3c 100%);
+  background-repeat: no-repeat;
+  background-position-y: -290px;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Inter", sans-serif;
+.c-line-banners img {
+  max-width: 100%;
 }
-
-.c-line-banner {
-  padding-top: 58px;
-  background: linear-gradient(81.88deg, #c21b23 37.32%, #ec1c3c 86.34%);
-  opacity: 0.85;
+.c-line-banners__carousel {
+  position: relative;
+  margin: 0 auto;
+  border: 1px solid;
+  padding: 0 15px;
 }
-.c-line-banner__text {
-  font-size: 14px;
-  line-height: 36px;
-  text-transform: uppercase;
-  font-family: "Inter", sans-serif;
-  text-align: center;
-  color: #fff;
+.c-line-banners .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
-  .c-line-banner__text {
-    font-size: 18px;
+  .c-line-banners .slick-track {
+    gap: 37px;
+  }
+}
+.c-line-banners__item {
+  width: 100% !important;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .c-line-banners__item {
+    max-width: 350px;
   }
 }
 @media screen and (min-width: 992px) {
-  .c-line-banner__text {
-    font-size: 24px;
+  .c-line-banners__item {
+    max-width: 384px;
   }
 }
-.c-line-banner__carousel {
-  margin: 30px auto 0;
-  position: relative;
-}
-@media screen and (min-width: 768px) {
-  .c-line-banner__carousel {
-    max-width: 700px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .c-line-banner__carousel {
-    max-width: 1306px;
-  }
-}
-.c-line-banner__item {
-  margin: 7px;
-  display: flex !important;
-  gap: 10px;
-  justify-content: center;
+.c-line-banners .slick-dots {
+  display: flex;
   align-items: center;
-  padding: 15px;
-  background: #F9F9F9;
-  border-radius: 4px;
-  max-width: 204px;
-  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
 }
-.c-line-banner .slick-arrow {
-  width: auto;
-  height: auto;
-  top: 62px;
+.c-line-banners .slick-dots button {
+  border: 1px solid #c21b23;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  text-indent: -999999px;
+  background: transparent;
 }
-.c-line-banner .slick-prev {
-  background: url("../img/arrow-left.svg") no-repeat;
-  left: -15px;
-}
-.c-line-banner .slick-next {
-  background: url("../img/arrow-right.svg") no-repeat;
-  right: -20px;
+.c-line-banners .slick-dots .slick-active button {
+  background-color: #c21b23;
 }

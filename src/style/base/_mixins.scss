@@ -1,19 +1,19 @@
-@import './variables';
+@use './variables';
 
 // Media Query
 @mixin device($device) {
   @if $device == xl {
-    @media screen and (min-width: $xl) {
+    @media screen and (min-width: variables.$xl) {
       @content;
     }
   }
   @else if $device == lg {
-    @media screen and (min-width: $lg) {
+    @media screen and (min-width: variables.$lg) {
       @content;
     }
   }
   @else if $device == md {
-    @media screen and (min-width: $md) {
+    @media screen and (min-width: variables.$md) {
       @content;
     }
   }

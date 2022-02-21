@@ -1,4 +1,4 @@
 @forward './mixins';
 @forward './function';
-@import './variables';
-@import './global';
+@forward './variables';
+@forward './global';

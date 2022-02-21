@@ -1,68 +1,77 @@
 @use "../../style/base/base";
 
-.c-line-banner {
-  padding-top: 58px;
-  background: linear-gradient(81.88deg, #c21b23 37.32%, #ec1c3c 86.34%);
-  opacity: 0.85;
+.c-line-banners {
 
-  &__text {
-    font-size: 14px;
-    line-height: 36px;
-    text-transform: uppercase;
-    font-family: base.$type-secondary;
-    text-align: center;
-    color: base.$white;
-    
-    @include base.device(md) {
-      font-size: 18px;
-    }
-    
-    @include base.device(lg) {
-      font-size: 24px;
-    }
+  &::before {
+    // content: '';
+    // padding-top: 58px;
+    // display: block;
+    // height: 200px;
+  }
+  background: rgb(255, 255, 255);
+  background: linear-gradient(5deg, rgba(255,255,255,1) 26%, rgba(194,27,35,1) 26%, rgba(236,28,60,1) 100%);
+  background-repeat: no-repeat;
+  background-position-y: -290px;
+
+
+  img {
+    max-width: 100%;
   }
 
   &__carousel {
-    
-    margin: 30px auto 0;
     position: relative;
+    margin: 0 auto;
+    border: 1px solid;
+    padding: 0 15px;
+  }
 
-    @include base.device(md) {
-      max-width: 700px;
+  .slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include base.device(sm) {
+      gap: 20px;
     }
-
+    
     @include base.device(md) {
-      max-width: calc(1366px - 60px);
+      gap: 37px;
     }
   }
 
   &__item {
-    margin: 7px;
-    display: flex!important;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    background: #F9F9F9;
-    border-radius: 4px;
-    max-width: 204px;
-    box-shadow: 1px 2px 6px rgba(0,0,0, .2);
+    width: 100% !important;
     cursor: pointer;
+
+    @include base.device(md) {
+      max-width: 350px;
+    }
+
+    @include base.device(lg) {
+      max-width: 384px;
+    }
   }
 
-  .slick-arrow {
-    width: auto;
-    height: auto;
-    top: 62px;
-  }
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
 
-  .slick-prev {
-    background: url('../img/arrow-left.svg') no-repeat;
-    left: -15px;
-  }
-
-  .slick-next {
-    background: url('../img/arrow-right.svg') no-repeat;
-    right: -20px;
+    button {
+      border: 1px solid base.$red-800;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      text-indent: -999999px;
+      background: transparent;
+    }
+    
+    & .slick-active {
+      button {
+        background-color: base.$red-800;
+      }
+    }
   }
 }
