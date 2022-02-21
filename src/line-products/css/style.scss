@@ -12,18 +12,17 @@
     font-family: base.$type-secondary;
     text-align: center;
     color: base.$white;
-    
+
     @include base.device(md) {
       font-size: 18px;
     }
-    
+
     @include base.device(lg) {
       font-size: 24px;
     }
   }
 
   &__carousel {
-    
     margin: 30px auto 0;
     position: relative;
 
@@ -38,16 +37,29 @@
 
   &__item {
     margin: 7px;
-    display: flex!important;
+    display: flex !important;
+    height: 70px;
     gap: 10px;
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background: #F9F9F9;
+    background: #f9f9f9;
     border-radius: 4px;
     max-width: 204px;
-    box-shadow: 1px 2px 6px rgba(0,0,0, .2);
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+
+    img {
+      max-width: 58px;
+    }
+
+    @include base.device(md) {
+      height: 68px;
+    }
+
+    @include base.device(lg) {
+      height: 92px;
+    }
   }
 
   .slick-arrow {
@@ -57,12 +69,36 @@
   }
 
   .slick-prev {
-    background: url('../img/arrow-left.svg') no-repeat;
+    background: url("../img/arrow-left.svg") no-repeat;
     left: -15px;
   }
 
   .slick-next {
-    background: url('../img/arrow-right.svg') no-repeat;
+    background: url("../img/arrow-right.svg") no-repeat;
     right: -20px;
+  }
+
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+
+    button {
+      border: 1px solid base.$white;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      text-indent: -999999px;
+      background: transparent;
+    }
+    
+    & .slick-active {
+      button {
+        background-color: base.$red-800;
+        border: 1px solid base.$red-800;
+      }
+    }
   }
 }

@@ -1,8 +1,7 @@
 .c-line-banners {
-  background: white;
-  background: linear-gradient(5deg, white 26%, #c21b23 26%, #ec1c3c 100%);
+  background: url("../img/triangle.svg");
   background-repeat: no-repeat;
-  background-position-y: -290px;
+  background-position-y: -60px;
 }
 .c-line-banners img {
   max-width: 100%;
@@ -10,7 +9,6 @@
 .c-line-banners__carousel {
   position: relative;
   margin: 0 auto;
-  border: 1px solid;
   padding: 0 15px;
 }
 .c-line-banners .slick-track {

@@ -1,4 +1,6 @@
-$('[data-carousel="line-products"]').slick({
+const SELECTOR = '[data-carousel="line-products"]'
+
+$(SELECTOR).slick({
   infinite: false,
   speed: 300,
   slidesToShow: 6,
@@ -31,3 +33,35 @@ $('[data-carousel="line-products"]').slick({
     // }
   ]
 })
+
+function initLineProductsTransitionAnimation() {
+  const container = document.querySelector(SELECTOR)
+  if (!container) return
+  container.addEventListener('mouseover', (event) => {
+    const target = event.target
+    if (target.classList.contains('c-line-products__item')) {
+      changeImg(target)
+      target.addEventListener('mouseleave', mouseOutSide)
+    }
+  })
+}
+
+
+function changeImg(target, reverse = false) {
+  const img = target.querySelector('img')
+  if (reverse) {
+    img.src = img.dataset.blur
+  } else {
+    img.src = img.dataset.hover
+  }
+}
+
+function mouseOutSide(event) {
+  const target = event.currentTarget
+  if (target.contains(target.querySelector('img'))) {
+    changeImg(target, true)
+    target.removeEventListener('mouseleave', mouseOutSide)
+  }
+}
+
+initLineProductsTransitionAnimation()

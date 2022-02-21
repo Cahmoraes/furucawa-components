@@ -1,18 +1,9 @@
 @use "../../style/base/base";
 
 .c-line-banners {
-
-  &::before {
-    // content: '';
-    // padding-top: 58px;
-    // display: block;
-    // height: 200px;
-  }
-  background: rgb(255, 255, 255);
-  background: linear-gradient(5deg, rgba(255,255,255,1) 26%, rgba(194,27,35,1) 26%, rgba(236,28,60,1) 100%);
+  background: url('../img/triangle.svg');
   background-repeat: no-repeat;
-  background-position-y: -290px;
-
+  background-position-y: -60px;
 
   img {
     max-width: 100%;
@@ -21,7 +12,6 @@
   &__carousel {
     position: relative;
     margin: 0 auto;
-    border: 1px solid;
     padding: 0 15px;
   }
 

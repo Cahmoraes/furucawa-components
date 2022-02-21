@@ -38,15 +38,29 @@
 .c-line-products__item {
   margin: 7px;
   display: flex !important;
+  height: 70px;
   gap: 10px;
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #F9F9F9;
+  background: #f9f9f9;
   border-radius: 4px;
   max-width: 204px;
   box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+.c-line-products__item img {
+  max-width: 58px;
+}
+@media screen and (min-width: 768px) {
+  .c-line-products__item {
+    height: 68px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .c-line-products__item {
+    height: 92px;
+  }
 }
 .c-line-products .slick-arrow {
   width: auto;
@@ -60,4 +74,23 @@
 .c-line-products .slick-next {
   background: url("../img/arrow-right.svg") no-repeat;
   right: -20px;
+}
+.c-line-products .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.c-line-products .slick-dots button {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  text-indent: -999999px;
+  background: transparent;
+}
+.c-line-products .slick-dots .slick-active button {
+  background-color: #c21b23;
+  border: 1px solid #c21b23;
 }
