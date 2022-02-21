@@ -1,4 +1,4 @@
-$('[data-carousel="line-products"]').slick({
+$('[data-carousel="line-banner"]').slick({
   infinite: false,
   speed: 300,
   slidesToShow: 6,

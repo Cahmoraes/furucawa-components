@@ -1,6 +1,6 @@
 @use "../../style/base/base";
 
-.c-line-products {
+.c-line-banner {
   padding-top: 58px;
   background: linear-gradient(81.88deg, #c21b23 37.32%, #ec1c3c 86.34%);
   opacity: 0.85;
@@ -31,7 +31,7 @@
       max-width: 700px;
     }
 
-    @include base.device(lg) {
+    @include base.device(md) {
       max-width: calc(1366px - 60px);
     }
   }
