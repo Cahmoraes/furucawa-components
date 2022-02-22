@@ -1,7 +1,12 @@
+body {
+  height: 100vh;
+}
+
 .c-line-banners {
   background: url("../img/triangle.svg");
   background-repeat: no-repeat;
   background-position-y: -60px;
+  background-size: cover;
 }
 .c-line-banners img {
   max-width: 100%;
@@ -15,6 +20,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (min-width: 576px) {
+  .c-line-banners .slick-track {
+    gap: 20px;
+  }
 }
 @media screen and (min-width: 768px) {
   .c-line-banners .slick-track {
