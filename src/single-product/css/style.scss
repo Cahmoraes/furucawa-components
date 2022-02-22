@@ -1,0 +1,133 @@
+@use "../../style/base/base";
+
+.c-single-product {
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  background-color: base.$gray-150;
+  padding: 10px 25px;
+  position: relative;
+
+  & .c-card {
+    margin-top: 17px;
+  } 
+
+  &__title {
+    text-transform: uppercase;
+    color: base.$red-800;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+  }
+}
+
+.c-card {
+  display: flex;
+  gap: 37px;
+  position: relative;
+  min-height: 190px;
+
+  &__item {
+    max-width: 471px;
+    width: 100%;
+    background: base.$gray-200;
+    box-shadow: 0px 4px 8px base.$gray-200;
+    border-radius: 5px;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    height: 218px;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 219px;
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  &__description {
+    margin-left: auto;
+    margin-top: 20px;
+    flex: 0 1 755px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: base.$gray-600;
+  }
+
+  &__info {
+    padding: 16px 14px 16px 11px;
+  }
+
+  &__name {
+    color: base.$gray-700;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &__box {
+    margin-top: 12px;
+    margin-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: base.$gray-700;
+  }
+
+  &__code {
+    font-size: 10px;
+    color: base.$gray-700;
+    font-weight: 400;
+  }
+
+  &__stars {
+    * {
+      cursor: pointer;
+    }
+  }
+
+  &__separator {
+    background: base.$gray-400;
+    border-width: 0;
+    height: 1px;
+  }
+
+  &__price-container {
+    margin-top: 6px;
+    margin-bottom: 12px;
+  }
+
+  &__price {
+    display: block;
+    color: base.$red-400;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+  }
+
+  &__points {
+    display: block;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  &__button {
+    text-align: center;
+    color: base.$white;
+    text-transform: uppercase;
+    max-width: 198px;
+    width: 100%;
+    padding: 9px 27px;
+    border: 0;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 400;
+    background: base.$green-400;
+  }
+}

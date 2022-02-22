@@ -1,0 +1,117 @@
+body {
+  height: 100vh;
+}
+
+.c-single-product {
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  background-color: #F9F9F9;
+  padding: 10px 25px;
+  position: relative;
+}
+.c-single-product .c-card {
+  margin-top: 17px;
+}
+.c-single-product__title {
+  text-transform: uppercase;
+  color: #c21b23;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+}
+
+.c-card {
+  display: flex;
+  gap: 37px;
+  position: relative;
+  min-height: 190px;
+}
+.c-card__item {
+  max-width: 471px;
+  width: 100%;
+  background: #eeeef0;
+  box-shadow: 0px 4px 8px #eeeef0;
+  border-radius: 5px;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  height: 218px;
+}
+.c-card__image {
+  width: 100%;
+  max-width: 219px;
+}
+.c-card__image img {
+  display: block;
+  max-width: 100%;
+}
+.c-card__description {
+  margin-left: auto;
+  margin-top: 20px;
+  flex: 0 1 755px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #565a60;
+}
+.c-card__info {
+  padding: 16px 14px 16px 11px;
+}
+.c-card__name {
+  color: #2f3033;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+}
+.c-card__box {
+  margin-top: 12px;
+  margin-bottom: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #2f3033;
+}
+.c-card__code {
+  font-size: 10px;
+  color: #2f3033;
+  font-weight: 400;
+}
+.c-card__stars * {
+  cursor: pointer;
+}
+.c-card__separator {
+  background: #adb2bc;
+  border-width: 0;
+  height: 1px;
+}
+.c-card__price-container {
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+.c-card__price {
+  display: block;
+  color: #ff0033;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+.c-card__points {
+  display: block;
+  font-size: 10px;
+  line-height: 15px;
+}
+.c-card__button {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  max-width: 198px;
+  width: 100%;
+  padding: 9px 27px;
+  border: 0;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 400;
+  background: #71b842;
+}
