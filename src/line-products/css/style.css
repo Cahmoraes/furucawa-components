@@ -117,6 +117,6 @@ body {
   background: transparent;
 }
 .c-line-products .slick-dots .slick-active button {
-  background-color: #c21b23;
-  border: 1px solid #c21b23;
+  background-color: #fff;
+  border: 1px solid #fff;
 }
