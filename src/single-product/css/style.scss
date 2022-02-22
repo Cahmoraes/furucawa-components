@@ -1,11 +1,25 @@
 @use "../../style/base/base";
 
 .c-single-product {
-  width: calc(100% - 50px);
-  margin: 0 auto;
-  background-color: base.$gray-150;
-  padding: 10px 25px;
   position: relative;
+  min-height: 900px;
+
+  @include base.device(sm) {
+    min-height: 480px;
+  }
+
+  @include base.device(md) {
+    min-height: 470px;
+  }
+
+  @include base.device(lg) {
+    min-height: 282px;
+  }
+
+  &__content {
+    background-color: base.$gray-150;
+    padding: 10px 25px;
+  }
 
   & .c-card {
     margin-top: 17px;
@@ -29,11 +43,42 @@
   }
 }
 
+[data-carousel="single-product"] {
+  .slick-dots {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+
+    @include base.device(lg) {
+      position: relative;
+      top: -30px;
+    }
+
+    button {
+      border: 1px solid base.$red-800;
+      border-radius: 50%;
+      width: 13px;
+      height: 13px;
+      text-indent: -999999px;
+      background: transparent;
+    }
+
+    & .slick-active {
+      button {
+        background-color: base.$red-800;
+        border: 1px solid base.$red-800;
+      }
+    }
+  }
+}
+
 .c-card {
   display: flex;
   gap: 37px;
+  min-height: 180px;
   position: relative;
-  min-height: 190px;
 
   &__item {
     max-width: 471px;
@@ -116,6 +161,9 @@
   }
 
   &__stars {
+    display: flex;
+    gap: 3px;
+
     * {
       cursor: pointer;
     }
@@ -150,7 +198,6 @@
     text-align: center;
     color: base.$white;
     text-transform: uppercase;
-    max-width: 198px;
     width: 100%;
     padding: 9px 27px;
     border: 0;
@@ -158,5 +205,9 @@
     font-size: 12px;
     font-weight: 400;
     background: base.$green-400;
+
+    @include base.device(lg) {
+      max-width: 198px;
+    }
   }
 }
