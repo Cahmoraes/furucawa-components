@@ -1,3 +1,7 @@
+body {
+  height: 100vh;
+}
+
 .c-line-products {
   padding-top: 58px;
   background: linear-gradient(81.88deg, #c21b23 37.32%, #ec1c3c 86.34%);
@@ -39,9 +43,10 @@
   margin: 7px;
   display: flex !important;
   height: 70px;
-  gap: 10px;
+  gap: 5px;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 15px;
   background: #f9f9f9;
   border-radius: 4px;
@@ -50,7 +55,17 @@
   cursor: pointer;
 }
 .c-line-products__item img {
-  max-width: 58px;
+  max-width: 30%;
+}
+@media screen and (min-width: 768px) {
+  .c-line-products__item img {
+    max-width: 33%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .c-line-products__item img {
+    max-width: 58px;
+  }
 }
 @media screen and (min-width: 768px) {
   .c-line-products__item {
@@ -60,6 +75,17 @@
 @media screen and (min-width: 992px) {
   .c-line-products__item {
     height: 92px;
+  }
+}
+.c-line-products__title {
+  font-size: 12px;
+  color: #565a60;
+  font-weight: 500;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .c-line-products__title {
+    font-size: 14px;
   }
 }
 .c-line-products .slick-arrow {
@@ -91,6 +117,6 @@
   background: transparent;
 }
 .c-line-products .slick-dots .slick-active button {
-  background-color: #c21b23;
-  border: 1px solid #c21b23;
+  background-color: #fff;
+  border: 1px solid #fff;
 }
