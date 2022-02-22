@@ -74,10 +74,11 @@ h6 {
 .c-slick-with-image__item {
   display: flex;
   justify-content: center;
+  margin-left: 45px;
 }
 .c-slick-with-image__image {
   height: 464px;
-  max-width: 320px;
+  max-width: 230px;
   width: 100%;
 }
 .c-slick-with-image .slick-arrow {
