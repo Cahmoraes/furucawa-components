@@ -36,7 +36,7 @@ $('[data-carousel="product-with-image"]').slick({
       breakpoint: 490,
       settings: {
         arrows: false,
-        slidesToShow: 1,
+        slidesToShow: 1.2,
         slidesToScroll: 1,
         dots: true
       }

@@ -63,13 +63,21 @@
   &__item {
     display: flex;
     justify-content: center;
+    margin-left: 45px;
+    @include base.device(sm) {
+      margin-left: unset;
+    }
   }
 
   &__image {
     height: 464px;
-    max-width: 320px;
+    max-width: 230px;
     width: 100%;
   }
+
+  // .slick-slide {
+  //   padding: 0 20% 0 0;
+  // }
 
   .slick-arrow {
     width: 15px;
