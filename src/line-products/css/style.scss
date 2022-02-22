@@ -39,9 +39,10 @@
     margin: 7px;
     display: flex !important;
     height: 70px;
-    gap: 10px;
+    gap: 5px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 15px;
     background: #f9f9f9;
     border-radius: 4px;
@@ -50,7 +51,15 @@
     cursor: pointer;
 
     img {
-      max-width: 58px;
+      max-width: 38%;
+      
+      @include base.device(md) {
+        max-width: 33%;
+      }
+      
+      @include base.device(lg) {
+        max-width: 58px;
+      }
     }
 
     @include base.device(md) {
@@ -60,6 +69,13 @@
     @include base.device(lg) {
       height: 92px;
     }
+  }
+
+  &__title {
+    font-size: 14px;
+    color: base.$gray-600;
+    font-weight: 500;
+    text-align: center;
   }
 
   .slick-arrow {
