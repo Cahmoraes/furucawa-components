@@ -53,6 +53,11 @@
   max-width: 320px;
   width: 100%;
 }
+@media screen and (min-width: 576px) {
+  .c-slick-with-image__carousel {
+    max-width: 500px;
+  }
+}
 @media screen and (min-width: 768px) {
   .c-slick-with-image__carousel {
     max-width: 760px;
@@ -62,6 +67,11 @@
   display: flex;
   justify-content: center;
   margin-left: 45px;
+}
+@media screen and (min-width: 576px) {
+  .c-slick-with-image__item {
+    margin-left: unset;
+  }
 }
 .c-slick-with-image__image {
   height: 464px;

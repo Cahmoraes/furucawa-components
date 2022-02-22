@@ -16,6 +16,11 @@
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 576px) {
+  .c-line-banners .slick-track {
+    gap: 20px;
+  }
+}
 @media screen and (min-width: 768px) {
   .c-line-banners .slick-track {
     gap: 37px;
