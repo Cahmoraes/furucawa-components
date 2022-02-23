@@ -87,6 +87,14 @@
     width: auto;
     height: auto;
     top: 62px;
+
+    @include base.device(md) {
+      top: 53px;
+    }
+
+    @include base.device(lg) {
+      top: 62px;
+    }
   }
 
   .slick-prev {
