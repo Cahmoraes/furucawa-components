@@ -25,12 +25,21 @@
   &__carousel {
     margin: 30px auto 0;
     position: relative;
+    max-width: 360px;
+
+    @include base.device(sm) {
+      max-width: 460px;
+    }
 
     @include base.device(md) {
       max-width: 700px;
     }
 
     @include base.device(lg) {
+      max-width: 856px;
+    }
+
+    @include base.device(xl) {
       max-width: calc(1366px - 60px);
     }
   }
@@ -78,7 +87,7 @@
     font-weight: 500;
     text-align: center;
 
-    @include base.device(md) {
+    @include base.device(xl) {
       font-size: 14px;
     }
   }
@@ -87,6 +96,10 @@
     width: auto;
     height: auto;
     top: 62px;
+
+    @include base.device(sm) {
+      top: 53px;
+    }
 
     @include base.device(md) {
       top: 53px;

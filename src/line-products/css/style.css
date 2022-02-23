@@ -24,6 +24,12 @@
 .c-line-products__carousel {
   margin: 30px auto 0;
   position: relative;
+  max-width: 360px;
+}
+@media screen and (min-width: 576px) {
+  .c-line-products__carousel {
+    max-width: 460px;
+  }
 }
 @media screen and (min-width: 768px) {
   .c-line-products__carousel {
@@ -31,6 +37,11 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .c-line-products__carousel {
+    max-width: 856px;
+  }
+}
+@media screen and (min-width: 1366px) {
   .c-line-products__carousel {
     max-width: 1306px;
   }
@@ -79,7 +90,7 @@
   font-weight: 500;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1366px) {
   .c-line-products__title {
     font-size: 14px;
   }
@@ -88,6 +99,11 @@
   width: auto;
   height: auto;
   top: 62px;
+}
+@media screen and (min-width: 576px) {
+  .c-line-products .slick-arrow {
+    top: 53px;
+  }
 }
 @media screen and (min-width: 768px) {
   .c-line-products .slick-arrow {
