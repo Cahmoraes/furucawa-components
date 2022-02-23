@@ -1,7 +1,3 @@
-body {
-  height: 100vh;
-}
-
 .c-line-products {
   padding-top: 58px;
   background: linear-gradient(81.88deg, #c21b23 37.32%, #ec1c3c 86.34%);
@@ -92,6 +88,16 @@ body {
   width: auto;
   height: auto;
   top: 62px;
+}
+@media screen and (min-width: 768px) {
+  .c-line-products .slick-arrow {
+    top: 53px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .c-line-products .slick-arrow {
+    top: 62px;
+  }
 }
 .c-line-products .slick-prev {
   background: url("../img/arrow-left.svg") no-repeat;
