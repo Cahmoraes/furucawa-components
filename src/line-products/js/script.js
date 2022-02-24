@@ -1,19 +1,18 @@
 const SELECTOR = '[data-carousel="line-products"]'
 
 $(SELECTOR).slick({
-  infinite: false,
+  infinite: true,
   speed: 300,
   slidesToShow: 6,
-  slidesToScroll: 3,
+  slidesToScroll: 6,
   dots: false,
-  infinite: true,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
         arrows: true,
         slidesToShow: 4,
-        slidesToScroll: 3,
+        slidesToScroll: 4,
       }
     },
     {
