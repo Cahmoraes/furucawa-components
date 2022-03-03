@@ -1,6 +1,8 @@
-$(document).ready(function () {
-  const SELECTOR = '[data-carousel="line-products"]'
+const SELECTOR = '[data-carousel="line-products"]'
+const lineProducts = document.querySelector('.c-line-products__carousel')
+lineProducts.style.display = 'none'
 
+$(document).ready(function () {
   $(SELECTOR).slick({
     infinite: true,
     speed: 300,
@@ -34,6 +36,8 @@ $(document).ready(function () {
       // }
     ]
   })
+
+  lineProducts.style.display = 'block'
 
   function initLineProductsTransitionAnimation() {
     const container = document.querySelector(SELECTOR)

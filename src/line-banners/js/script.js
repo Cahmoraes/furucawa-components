@@ -1,4 +1,8 @@
-$('[data-carousel="line-banners"]').slick({
+const lineBanners = document.querySelector('.c-line-banners')
+lineBanners.style.display = 'none'
+
+$( document ).ready(function() {
+   $('[data-carousel="line-banners"]').slick({
   dots: true,
   infinite: false,
   speed: 300,
@@ -31,3 +35,7 @@ $('[data-carousel="line-banners"]').slick({
     }
   ]
 })
+
+lineBanners.style.display = 'block'
+
+});
