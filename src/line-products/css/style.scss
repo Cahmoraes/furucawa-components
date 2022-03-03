@@ -2,8 +2,13 @@
 
 .c-line-products {
   padding-top: 58px;
-  background: linear-gradient(81.88deg, #c21b23 37.32%, #ec1c3c 86.34%);
+  background: linear-gradient(8deg, #c21b23 37.32%, #ec1c3c 86.34%);
   opacity: 0.85;
+  padding-bottom: 20px;
+  
+  @include base.device(md) {
+    padding-bottom: 20px;
+  }
 
   &__text {
     font-size: 14px;
@@ -111,12 +116,12 @@
   }
 
   .slick-prev {
-    background: url("../img/arrow-left.svg") no-repeat;
+    background: url("https://images-hml.efurukawa.com/html/home/arrow-left.svg") no-repeat;
     left: -15px;
   }
 
   .slick-next {
-    background: url("../img/arrow-right.svg") no-repeat;
+    background: url("https://images-hml.efurukawa.com/html/home/arrow-right.svg") no-repeat;
     right: -20px;
   }
 

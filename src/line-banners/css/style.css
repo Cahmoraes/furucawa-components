@@ -1,7 +1,7 @@
 .c-line-banners {
-  background: url("../img/triangle.svg");
+  background: url("https://images-hml.efurukawa.com/html/home/triangle.svg");
   background-repeat: no-repeat;
-  background-position-y: -60px;
+  background-position-y: -2px;
   background-size: cover;
 }
 .c-line-banners img {
