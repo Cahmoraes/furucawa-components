@@ -1,10 +1,28 @@
 @use "../../style/base/base";
 
 .c-line-banners {
-  background: url('https://images-hml.efurukawa.com/html/home/triangle.svg');
-  background-repeat: no-repeat;
-  background-position-y: -2px;
-  background-size: cover;
+  // background: url("https://images-hml.efurukawa.com/html/home/triangle.svg");
+  // background-repeat: no-repeat;
+  // background-position-y: -2px;
+  // background-size: cover;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 50px 0;
+    border-color: transparent #cc3d45 transparent transparent;
+
+    @include base.device(md) {
+      border-width: 0 100vw 100px 0;
+    }
+
+    @include base.device(lg) {
+      border-width: 0 100vw 200px 0;
+    }
+  }
 
   img {
     max-width: 100%;
@@ -14,6 +32,15 @@
     position: relative;
     margin: 0 auto;
     padding: 0 15px;
+    top: -27px;
+
+    @include base.device(md) {
+      top: -55px;
+    }
+
+    @include base.device(lg) {
+      top: -70px;
+    }    
   }
 
   .slick-track {
@@ -25,7 +52,7 @@
     @include base.device(sm) {
       gap: 20px;
     }
-    
+
     @include base.device(md) {
       gap: 37px;
     }
@@ -59,7 +86,7 @@
       text-indent: -999999px;
       background: transparent;
     }
-    
+
     & .slick-active {
       button {
         background-color: base.$red-800;
