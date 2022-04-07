@@ -1,0 +1,118 @@
+.c-banner {
+  margin-bottom: 12px;
+}
+@media screen and (min-width: 768px) {
+  .c-banner {
+    margin-bottom: 48px;
+  }
+}
+.c-banner img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.c-card-category {
+  max-width: 1184px;
+  margin: 0 auto;
+  column-gap: 16px;
+  row-gap: 48px;
+}
+@media screen and (min-width: 576px) {
+  .c-card-category {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.c-card-category__box {
+  background: #F9F9F9;
+  border: 1px solid #fff;
+  padding: 16px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 576px) {
+  .c-card-category__box {
+    margin: initial;
+  }
+}
+@media screen and (min-width: 768px) {
+  .c-card-category__box {
+    max-width: 384px;
+    padding: 20px;
+  }
+}
+.c-card-category__title {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #c21b23;
+}
+.c-card-category__img {
+  display: block;
+  margin: 20px auto;
+}
+.c-card-category__description {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #565a60;
+}
+.c-card-category__link {
+  display: block;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #0486B0;
+}
+.c-card-category__arrow {
+  vertical-align: middle;
+  display: inline-block !important;
+}
+.c-card-category .slick-arrow {
+  width: 30px;
+  height: 30px;
+  top: 132px;
+  background-color: transparent !important;
+}
+@media screen and (min-width: 576px) {
+  .c-card-category .slick-arrow {
+    top: 53px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .c-card-category .slick-arrow {
+    top: 53px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .c-card-category .slick-arrow {
+    top: 62px;
+  }
+}
+.c-card-category .slick-prev {
+  background: url("../img/arrow-red-left.svg") no-repeat center center;
+}
+.c-card-category .slick-next {
+  background: url("../img/arrow-red-right.svg") no-repeat center center;
+}
+.c-card-category .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.c-card-category .slick-dots button {
+  border: 1px solid #c21b23;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  text-indent: -999999px;
+  background: transparent;
+}
+.c-card-category .slick-dots .slick-active button {
+  background-color: #c21b23;
+  border: 1px solid #c21b23;
+}

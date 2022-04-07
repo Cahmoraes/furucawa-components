@@ -1,0 +1,133 @@
+@use "../../style/base/base";
+
+.c-banner {
+  margin-bottom: 12px;
+  
+  @include base.device(md) {
+    margin-bottom: 48px;
+  }
+
+  img {
+    max-width:100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.c-card-category {
+  max-width: 1184px;
+  margin: 0 auto;
+  column-gap: 16px;
+  row-gap: 48px;
+
+  @include base.device(sm) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    background: base.$gray-150;
+    border: 1px solid base.$white;
+    padding: 16px;
+    width: 100%;
+    margin: 0 auto;
+    
+    @include base.device(sm) {
+      margin: initial;  
+    }
+    
+    @include base.device(md) {
+      max-width: 384px;
+      padding: 20px;
+    }
+  }
+
+  &__box {
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: base.$red-800;
+  }
+
+  &__img {
+    display: block;
+    margin: 20px auto;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: base.$gray-600;
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    color: base.$blue-400;
+  }
+
+  &__arrow {
+    vertical-align: middle;
+    display: inline-block !important;
+  }
+
+  .slick-arrow {
+    width: 30px;
+    height: 30px;
+    top: 132px;
+    background-color: transparent!important;
+
+    @include base.device(sm) {
+      top: 53px;
+    }
+
+    @include base.device(md) {
+      top: 53px;
+    }
+
+    @include base.device(lg) {
+      top: 62px;
+    }
+  }
+
+  .slick-prev {
+    background: url("../img/arrow-red-left.svg") no-repeat center center;
+    // left: -15px;
+  }
+
+  .slick-next {
+    background: url("../img/arrow-red-right.svg") no-repeat center center;
+    // right: -20px;
+  }
+
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+
+    button {
+      border: 1px solid base.$red-800;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      text-indent: -999999px;
+      background: transparent;
+    }
+
+    & .slick-active {
+      button {
+        background-color: base.$red-800;
+        border: 1px solid base.$red-800;
+      }
+    }
+  }
+}
